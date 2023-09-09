@@ -11,7 +11,7 @@ public class CustomerEmail {
 
     private void ensureIsValidEmail(String value){
         if(!value.matches(this.validEmailRegex)){
-            throw new RuntimeException();
+            throw new RuntimeException("Email is invalid");
         }
     }
 }

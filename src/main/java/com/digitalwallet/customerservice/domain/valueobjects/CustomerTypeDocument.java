@@ -11,7 +11,7 @@ public class CustomerTypeDocument {
 
     private void ensureIsValidTypeDocument(String value){
         if(!value.matches(this.validTypeDocumentRegex)){
-            throw new RuntimeException();
+            throw new RuntimeException("Type document is invalid");
         }
     }
 }

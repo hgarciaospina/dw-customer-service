@@ -11,7 +11,7 @@ public class CustomerFirstName {
 
     private void ensureIsValidFirstName(String value){
         if(!value.matches(this.validFirstNameRegex)){
-            throw new RuntimeException();
+            throw new RuntimeException("First name is invalid");
         }
     }
 }

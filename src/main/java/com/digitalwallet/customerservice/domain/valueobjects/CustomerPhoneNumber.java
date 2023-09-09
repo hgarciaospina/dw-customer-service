@@ -11,7 +11,7 @@ public class CustomerPhoneNumber {
     }
     private void ensureIsValidPhoneNumber(String value){
         if(!value.matches(this.validPhoneNumberRegex)){
-            throw new RuntimeException();
+            throw new RuntimeException("Phone number is invalid");
         }
     }
 }
