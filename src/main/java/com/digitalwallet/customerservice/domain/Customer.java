@@ -7,7 +7,7 @@ public class Customer {
     private final CustomerLastName lastName;
     private final CustomerDocumentNumber documentNumber;
     private final CustomerTypeDocument typeDocument;
-    private final CustomerPhoneNumber phoneNumber;
+    private CustomerPhoneNumber phoneNumber;
     private final CustomerEmail email;
     public Customer(String firstName, String lastName, String documentNumber,  String typeDocument, String phoneNumber, String email){
         this.firstName = new CustomerFirstName(firstName);
